@@ -18,6 +18,4 @@ const addSchema = Joi.object().custom((value, helpers) => {
     'object.missingKeys': 'missing required fields: {{#missingKeys}}',
 });
 
-module.exports = {
-    addSchema,
-}
+module.exports = addSchema;
